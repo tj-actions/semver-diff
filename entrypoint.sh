@@ -22,5 +22,6 @@ if [[ -z $CURRENT_TAG ]]; then
 fi
 
 
-PART=$(wget -O - https://raw.githubusercontent.com/fsaintjacques/semver-tool/3.2.0/src/semver | bash -s diff $CURRENT_TAG $NEW_TAG)
+
+PART=$(wget -O - https://raw.githubusercontent.com/fsaintjacques/semver-tool/3.2.0/src/semver | bash -s diff "${CURRENT_TAG/v//}" "${NEW_TAG/v//}")
 echo "::set-output name=release_type::$PART"
