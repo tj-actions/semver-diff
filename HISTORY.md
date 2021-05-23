@@ -1,12 +1,16 @@
 # Changelog
 
-## [Unreleased](https://github.com/tj-actions/semver-diff/tree/HEAD)
+## [v1.1](https://github.com/tj-actions/semver-diff/tree/v1.1) (2021-05-23)
 
-[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v1...HEAD)
+[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v1...v1.1)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#3](https://github.com/tj-actions/semver-diff/issues/3)
+
+**Merged pull requests:**
+
+- Upgraded to v1 [\#4](https://github.com/tj-actions/semver-diff/pull/4) ([jackton1](https://github.com/jackton1))
 
 ## [v1](https://github.com/tj-actions/semver-diff/tree/v1) (2021-05-23)
 
