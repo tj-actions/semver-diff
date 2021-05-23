@@ -16,11 +16,11 @@ NEW_TAG=${4:-"${GITHUB_REF/refs\/tags\//}"}
 
 if [[ -z $CURRENT_TAG ]]; then
   echo "::warning::Initial release detected unable to determine any tag diff."
-  echo "::warning::Setting diff_part output to $INPUT_INITIAL_DIFF_PART."
-  echo "::set-output name=diff_part::$INPUT_INITIAL_DIFF_PART"
+  echo "::warning::Setting release_type to $INPUT_INITIAL_RELEASE_TYPE."
+  echo "::set-output name=release_type::$INPUT_INITIAL_RELEASE_TYPE"
   exit 0;
 fi
 
 
 PART=$(wget -O - https://raw.githubusercontent.com/fsaintjacques/semver-tool/3.2.0/src/semver | bash -s diff $CURRENT_TAG $NEW_TAG)
-echo "::set-output name=diff_part::$PART"
+echo "::set-output name=release_type::$PART"

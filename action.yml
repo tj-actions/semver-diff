@@ -6,10 +6,14 @@ inputs:
     description: 'GITHUB_TOKEN or a Repo scoped PAT'
     required: true
     default: ${{ github.token }}
-  initial_diff_part:
-    description: 'Initial semver diff part returned when there are no existing tags.'
+  initial_release_type:
+    description: 'Initial release type returned when there are no existing tags.'
     required: true
     default: 'patch'
+
+outputs:
+  release_type:
+    description: 'The difference between two versions by the release type (MAJOR, MINOR, PATCH, PRERELEASE, BUILD)'
 
 runs:
   using: 'docker'
