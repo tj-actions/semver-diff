@@ -1,11 +1,12 @@
 # Changelog
 
-## [v1.1](https://github.com/tj-actions/semver-diff/tree/v1.1) (2021-05-23)
+## [v1.1.3](https://github.com/tj-actions/semver-diff/tree/v1.1.3) (2021-05-23)
 
-[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v1.1.2...HEAD)
+[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v1.1.2...v1.1.3)
 
 **Merged pull requests:**
 
+- Upgraded to v1.1.2 [\#6](https://github.com/tj-actions/semver-diff/pull/6) ([jackton1](https://github.com/jackton1))
 - Upgraded to v1.1 [\#5](https://github.com/tj-actions/semver-diff/pull/5) ([jackton1](https://github.com/jackton1))
 
 ## [v1.1.2](https://github.com/tj-actions/semver-diff/tree/v1.1.2) (2021-05-23)
