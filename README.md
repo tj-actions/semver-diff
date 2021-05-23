@@ -30,7 +30,7 @@ jobs:
       - name: Show release type
         run: |
           echo "Release type: ${{ steps.semver-diff.outputs.release_type }}"
-          # Outputs: major || minor || patch || prerelease || build
+        # Outputs: major || minor || patch || prerelease || build
 ```
 
 
