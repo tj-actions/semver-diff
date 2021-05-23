@@ -5,14 +5,32 @@
 semver-diff
 -----------
 
-Get the difference between two semantic versions
+Get the difference between two semantic versions using [semver-tool](https://github.com/fsaintjacques/semver-tool)
 
 ```yaml
-...
+name: Get semver diff
+
+on:
+  release:
+    types:
+      - created
+  push:
+    tags:
+      - v*
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: semver-diff
     steps:
       - uses: actions/checkout@v2
-      - name: Semver diff
+      - name: Run semver-diff
+        id: semver-diff
         uses: tj-actions/semver-diff@v1
+      - name: Show release type
+        run: |
+          echo "Release type: ${{ steps.semver-diff.outputs.release_type }}"
+          # Outputs: major || minor || patch || prerelease || build
 ```
 
 
@@ -21,15 +39,17 @@ Get the difference between two semantic versions
 |   Input       |    type    |  required     |  default                      |  description  |
 |:-------------:|:-----------:|:-------------:|:----------------------------:|:-------------:|
 | token         |  `string`   |    `true`    | `${{ github.token }}` | [GITHUB_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)              |
+| initial_release_type | `string` | `true`    | `patch`  |  Initial release type returned <br /> when there are no existing tags. |
 
+
+## Outputs
+
+|   Output       |    type    |  description  |
+|:-------------:|:-----------:|:-------------:|
+| release_type | `string` | The difference between two versions by the release type (major, minor, patch, prerelease, build) |
 
 
 * Free software: [MIT license](LICENSE)
-
-Features
---------
-
-* TODO
 
 
 Credits
