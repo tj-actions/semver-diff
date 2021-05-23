@@ -46,7 +46,7 @@ jobs:
 
 |   Output       |    type    |  description  |
 |:-------------:|:-----------:|:-------------:|
-| release_type | `string` | The difference between two versions by the release type (major, minor, patch, prerelease, build) |
+| release_type | `string` | The difference between two versions by release type <br /> (major, minor, patch, prerelease, build) |
 
 
 * Free software: [MIT license](LICENSE)
