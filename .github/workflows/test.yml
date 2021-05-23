@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  release:
+    types:
+      - created
+  push:
+    tags:
+      - v*
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test semver-diff
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: shellcheck
+        uses: reviewdog/action-shellcheck@v1
+      - name: Run semver-diff
+        uses: ./
