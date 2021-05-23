@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run semver-diff
         id: semver-diff
-        uses: tj-actions/semver-diff@v1.1
+        uses: tj-actions/semver-diff@v1.1.2
       - name: Show release type
         run: |
           echo "Release type: ${{ steps.semver-diff.outputs.release_type }}"
