@@ -13,7 +13,11 @@ inputs:
 
 outputs:
   release_type:
-    description: 'The difference between two versions by the release type (MAJOR, MINOR, PATCH, PRERELEASE, BUILD)'
+    description: 'The difference between two versions by the release type (major, minor, patch, prerelease, build)'
+  new_version:
+    description: 'The current project version'
+  old_version:
+    description: 'The previous project version'
 
 runs:
   using: 'docker'
