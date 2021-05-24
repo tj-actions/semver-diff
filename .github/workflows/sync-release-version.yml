@@ -28,6 +28,6 @@ jobs:
           base: "main"
           title: "Upgraded to ${{ steps.sync-release-version.outputs.new_version }}"
           branch: "upgrade-to-${{ steps.sync-release-version.outputs.new_version }}"
-          commit-message: "Upgraded from ${{ steps.sync-release-version.outputs.old_version }} -> ${{ steps.sync-release-version.outputs.new_version }}"
+          commit-message: "Upgraded from ${{ steps.sync-release-version.outputs.old_version }} → ${{ steps.sync-release-version.outputs.new_version }}"
           body: "View [CHANGES](https://github.com/${{ github.repository }}/compare/${{ steps.sync-release-version.outputs.old_version }}...${{ steps.sync-release-version.outputs.new_version }})"
           token: ${{ secrets.PAT_TOKEN }}
