@@ -24,7 +24,7 @@ jobs:
         uses: reviewdog/action-shellcheck@v1
       - name: test
         run: |
-          echo "${{ github.event.pull_request.head.repo.owner.login }}"
+          echo "${{ github.event.pull_request }}"
       - name: Run semver-diff
         id: semver-diff
         uses: ./
