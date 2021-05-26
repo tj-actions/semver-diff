@@ -42,6 +42,56 @@ Example
 ![Screen Shot 2021-05-24 at 7 13 32 AM](https://user-images.githubusercontent.com/17484350/119339811-a6b92a80-bc5f-11eb-9f6f-475cae246545.png)
 
 
+#### Using [bump2version](https://github.com/c4urself/bump2version)
+
+```yaml
+name: Upload Python Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Run semver-diff
+        id: semver-diff
+        uses: tj-actions/semver-diff@v1.2.0
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.6.x'
+
+      - name: Install dependencies
+        ...
+
+      - name: Setup git
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: bumpversion
+        run: |
+          bump2version PART="${{ steps.semver-diff.outputs.release_type }}"
+          git switch -c main 
+       
+      - name: Build and publish
+        ...
+        
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          base: "main"
+          ...
+```
+
+
 ## Inputs
 
 |   Input       |    type    |  required     |  default                      |  description  |
