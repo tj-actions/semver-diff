@@ -1,15 +1,12 @@
 [![CI](https://github.com/tj-actions/semver-diff/workflows/CI/badge.svg)](https://github.com/tj-actions/semver-diff/actions?query=workflow%3ACI)
-[![Update release version.](https://github.com/tj-actions/semver-diff/workflows/Update%20release%20version./badge.svg)](https://github.com/tj-actions/semver-diff/actions?query=workflow%3A%22Update+release+version.%22) 
-[![Public workflows that use this action.](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi-tj-actions1.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3Dtj-actions%2Fsemver-diff%26badge%3Dtrue)](https://github.com/search?o=desc&q=tj-actions+semver-diff+path%3A.github%2Fworkflows+language%3AYAML&s=&type=Code)
+[![Update release version.](https://github.com/tj-actions/semver-diff/workflows/Update%20release%20version./badge.svg)](https://github.com/tj-actions/semver-diff/actions?query=workflow%3A%22Update+release+version.%22)
+[![Public workflows that use this action.](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi-tj-actions1.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3Dtj-actions%2Fsemver-diff%26badge%3Dtrue)](https://github.com/search?o=desc\&q=tj-actions+semver-diff+path%3A.github%2Fworkflows+language%3AYAML\&s=\&type=Code)
 
-
-semver-diff
------------
+## semver-diff
 
 Get the difference between your previous tagged semantic version and the latest tag using [semver-tool](https://github.com/fsaintjacques/semver-tool)
 
-Usage
------
+## Usage
 
 ```yaml
 name: Get semver diff
@@ -37,11 +34,9 @@ jobs:
         # Outputs: Release type: major || minor || patch || prerelease || build
 ```
 
-Example
--------
+## Example
 
 ![Screen Shot 2021-05-24 at 7 13 32 AM](https://user-images.githubusercontent.com/17484350/119339811-a6b92a80-bc5f-11eb-9f6f-475cae246545.png)
-
 
 #### Using [bump2version](https://github.com/c4urself/bump2version)
 
@@ -92,7 +87,6 @@ jobs:
           ...
 ```
 
-
 ## Inputs
 
 |   Input       |    type    |  required     |  default                      |  description  |
@@ -100,36 +94,32 @@ jobs:
 | token         |  `string`   |    `true`    | `${{ github.token }}` | [GITHUB_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)              |
 | initial_release_type | `string` | `true`    | `patch`  |  Initial release type returned <br /> when there are no existing tags. |
 
-
 ## Outputs
 
 |   Output       |    type    |  description  |
 |:-------------:|:-----------:|:-------------:|
 | release_type | `string` | The difference between two versions by release type <br /> (major, minor, patch, prerelease, build) |
 
-
-* Free software: [MIT license](LICENSE)
+*   Free software: [MIT license](LICENSE)
 
 If you feel generous and want to show some extra appreciation:
 
 [![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
 [buymeacoffee]: https://www.buymeacoffee.com/jackton1
+
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png
 
-
-Credits
--------
+## Credits
 
 This package was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) using [cookiecutter-action](https://github.com/tj-actions/cookiecutter-action)
 
-Report Bugs
------------
+## Report Bugs
 
 Report bugs at https://github.com/tj-actions/semver-diff/issues.
 
 If you are reporting a bug, please include:
 
-* Your operating system name and version.
-* Any details about your workflow that might be helpful in troubleshooting.
-* Detailed steps to reproduce the bug.
+*   Your operating system name and version.
+*   Any details about your workflow that might be helpful in troubleshooting.
+*   Detailed steps to reproduce the bug.
