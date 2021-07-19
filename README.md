@@ -4,7 +4,7 @@
 
 ## semver-diff
 
-Get the difference between your previous tagged semantic version and the latest tag using [semver-tool](https://github.com/fsaintjacques/semver-tool)
+Get the difference between two semantic versions using [semver-tool](https://github.com/fsaintjacques/semver-tool)
 
 ## Usage
 
