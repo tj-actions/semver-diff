@@ -6,6 +6,11 @@
 
 Get the difference between two semantic versions using [semver-tool](https://github.com/fsaintjacques/semver-tool)
 
+## Example
+
+![Screen Shot 2021-05-24 at 7 13 32 AM](https://user-images.githubusercontent.com/17484350/119339811-a6b92a80-bc5f-11eb-9f6f-475cae246545.png)
+
+
 ## Usage
 
 ```yaml
@@ -33,10 +38,6 @@ jobs:
           echo "Release type: ${{ steps.semver-diff.outputs.release_type }}"
         # Outputs: Release type: major || minor || patch || prerelease || build
 ```
-
-## Example
-
-![Screen Shot 2021-05-24 at 7 13 32 AM](https://user-images.githubusercontent.com/17484350/119339811-a6b92a80-bc5f-11eb-9f6f-475cae246545.png)
 
 #### Using [bump2version](https://github.com/c4urself/bump2version)
 
