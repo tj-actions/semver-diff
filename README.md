@@ -77,7 +77,7 @@ jobs:
           bump2version PART="${{ steps.semver-diff.outputs.release_type }}"
           git switch -c main 
        
-      - name: Build and publish
+      - name: Build and publish to PyPi
         ...
         
       - name: Create Pull Request
