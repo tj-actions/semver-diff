@@ -91,14 +91,14 @@ jobs:
 
 |   Input       |    type    |  required     |  default                      |  description  |
 |:-------------:|:-----------:|:-------------:|:----------------------------:|:-------------:|
-| token         |  `string`   |    `true`    | `${{ github.token }}` | [GITHUB_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)              |
-| initial_release_type | `string` | `true`    | `patch`  |  Initial release type returned <br /> when there are no existing tags. |
+| token         |  `string`   |    `true`    | `${{ github.token }}` | [GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github\_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)              |
+| initial\_release\_type | `string` | `true`    | `patch`  |  Initial release type returned <br /> when there are no existing tags. |
 
 ## Outputs
 
 |   Output       |    type    |  description  |
 |:-------------:|:-----------:|:-------------:|
-| release_type | `string` | The difference between two versions by release type <br /> (major, minor, patch, prerelease, build) |
+| release\_type | `string` | The difference between two versions by release type <br /> (major, minor, patch, prerelease, build) |
 
 *   Free software: [MIT license](LICENSE)
 
