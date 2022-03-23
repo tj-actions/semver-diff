@@ -1,5 +1,46 @@
 # Changelog
 
+## [v1.2.1](https://github.com/tj-actions/semver-diff/tree/v1.2.1) (2022-03-23)
+
+[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v1.2.0...v1.2.1)
+
+**Closed issues:**
+
+- Dependency Dashboard [\#3](https://github.com/tj-actions/semver-diff/issues/3)
+
+**Merged pull requests:**
+
+- Update dependency alpine to v3.15.1 [\#39](https://github.com/tj-actions/semver-diff/pull/39) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/github-changelog-generator action to v1.13 [\#38](https://github.com/tj-actions/semver-diff/pull/38) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/verify-changed-files action to v9 [\#37](https://github.com/tj-actions/semver-diff/pull/37) ([renovate[bot]](https://github.com/apps/renovate))
+- Update codacy/codacy-analysis-cli-action action to v4.0.2 [\#36](https://github.com/tj-actions/semver-diff/pull/36) ([renovate[bot]](https://github.com/apps/renovate))
+- Update codacy/codacy-analysis-cli-action action to v4.0.1 [\#35](https://github.com/tj-actions/semver-diff/pull/35) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action [\#34](https://github.com/tj-actions/semver-diff/pull/34) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/github-changelog-generator action to v1.12 [\#33](https://github.com/tj-actions/semver-diff/pull/33) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/remark action to v2.3 [\#32](https://github.com/tj-actions/semver-diff/pull/32) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/remark action to v2 [\#31](https://github.com/tj-actions/semver-diff/pull/31) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/github-changelog-generator action to v1.11 [\#30](https://github.com/tj-actions/semver-diff/pull/30) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/github-changelog-generator action to v1.10 [\#29](https://github.com/tj-actions/semver-diff/pull/29) ([renovate[bot]](https://github.com/apps/renovate))
+- Update alpine Docker tag to v3.15.0 [\#28](https://github.com/tj-actions/semver-diff/pull/28) ([renovate[bot]](https://github.com/apps/renovate))
+- Update alpine Docker tag to v3.14.3 [\#27](https://github.com/tj-actions/semver-diff/pull/27) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#26](https://github.com/tj-actions/semver-diff/pull/26) ([jackton1](https://github.com/jackton1))
+- Update actions/checkout action to v2.4.0 [\#25](https://github.com/tj-actions/semver-diff/pull/25) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v2.3.5 [\#24](https://github.com/tj-actions/semver-diff/pull/24) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#23](https://github.com/tj-actions/semver-diff/pull/23) ([jackton1](https://github.com/jackton1))
+- Update tj-actions/verify-changed-files action to v8 [\#22](https://github.com/tj-actions/semver-diff/pull/22) ([renovate[bot]](https://github.com/apps/renovate))
+- Update pascalgn/automerge-action action to v0.14.3 [\#21](https://github.com/tj-actions/semver-diff/pull/21) ([renovate[bot]](https://github.com/apps/renovate))
+- Update alpine Docker tag to v3.14.2 [\#20](https://github.com/tj-actions/semver-diff/pull/20) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/remark action to v1.7 [\#19](https://github.com/tj-actions/semver-diff/pull/19) ([renovate[bot]](https://github.com/apps/renovate))
+- Update alpine Docker tag to v3.14.1 [\#18](https://github.com/tj-actions/semver-diff/pull/18) ([renovate[bot]](https://github.com/apps/renovate))
+- Update codacy/codacy-analysis-cli-action action to v4 [\#17](https://github.com/tj-actions/semver-diff/pull/17) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#16](https://github.com/tj-actions/semver-diff/pull/16) ([jackton1](https://github.com/jackton1))
+- Update codacy/codacy-analysis-cli-action action to v3 [\#15](https://github.com/tj-actions/semver-diff/pull/15) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/verify-changed-files action to v7 [\#13](https://github.com/tj-actions/semver-diff/pull/13) ([renovate[bot]](https://github.com/apps/renovate))
+- Update alpine Docker tag to v3.14.0 [\#12](https://github.com/tj-actions/semver-diff/pull/12) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#11](https://github.com/tj-actions/semver-diff/pull/11) ([jackton1](https://github.com/jackton1))
+- Update tj-actions/sync-release-version action to v8.7 [\#10](https://github.com/tj-actions/semver-diff/pull/10) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v1.2.0 [\#8](https://github.com/tj-actions/semver-diff/pull/8) ([jackton1](https://github.com/jackton1))
+
 ## [v1.2.0](https://github.com/tj-actions/semver-diff/tree/v1.2.0) (2021-05-24)
 
 [Full Changelog](https://github.com/tj-actions/semver-diff/compare/v1.1.3...v1.2.0)
@@ -24,10 +65,6 @@
 ## [v1.1](https://github.com/tj-actions/semver-diff/tree/v1.1) (2021-05-23)
 
 [Full Changelog](https://github.com/tj-actions/semver-diff/compare/v1...v1.1)
-
-**Closed issues:**
-
-- Dependency Dashboard [\#3](https://github.com/tj-actions/semver-diff/issues/3)
 
 **Merged pull requests:**
 
