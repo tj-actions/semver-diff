@@ -7,8 +7,6 @@ if [[ $GITHUB_REF != "refs/tags/"* ]]; then
   exit 0;
 fi
 
-git remote set-url origin "https://$INPUT_TOKEN@github.com/$GITHUB_REPOSITORY"
-
 git fetch origin +refs/tags/*:refs/tags/*
 
 CURRENT_TAG=${3:-$(git describe --abbrev=0 --tags "$(git rev-list --tags --skip=1  --max-count=1)" || true)}
@@ -21,6 +19,7 @@ if [[ -z $CURRENT_TAG ]]; then
   exit 0;
 fi
 
+echo "::debug::Calculating diff..."
 PART=$(wget -O - https://raw.githubusercontent.com/fsaintjacques/semver-tool/3.2.0/src/semver | bash -s diff "${CURRENT_TAG//v/}" "${NEW_TAG//v/}")
 
 echo "::set-output name=release_type::$PART"
