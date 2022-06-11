@@ -14,14 +14,31 @@ inputs:
 outputs:
   release_type:
     description: 'The difference between two versions by the release type (major, minor, patch, prerelease, build)'
+    value: ${{ steps.semver.outputs.release_type }}
   new_version:
     description: 'The current project version'
+    value: ${{ steps.semver.outputs.new_version }}
   old_version:
     description: 'The previous project version'
+    value: ${{ steps.semver.outputs.old_version }}
 
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: 'composite'
+  steps:
+    - run: |
+      bash $GITHUB_ACTION_PATH/entrypoint.sh
+    id: semver
+    shell: bash
+    env:
+      GITHUB_SERVER_URL: ${{ github.server_url }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      GITHUB_REF: ${{ github.ref }}
+      GITHUB_EVENT_NAME: ${{ github.event_name }}
+      # INPUT_<VARIABLE_NAME> is not available in Composite run steps
+      # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
+      INPUT_TOKEN: ${{ inputs.token }}
+      INPUT_INITIAL_RELEASE_TYPE: ${{ inputs.initial_release_type }}
+        
 branding:
   icon: copy
   color: white
