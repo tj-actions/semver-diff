@@ -1,12 +1,35 @@
 # Changelog
 
-## [v1.2.1](https://github.com/tj-actions/semver-diff/tree/v1.2.1) (2022-03-23)
+## [v2.0.0](https://github.com/tj-actions/semver-diff/tree/v2.0.0) (2022-06-12)
 
-[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v1.2.0...v1.2.1)
+[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v1.2.1...v2.0.0)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#3](https://github.com/tj-actions/semver-diff/issues/3)
+
+**Merged pull requests:**
+
+- Bump tj-actions/sync-release-version from 8.7 to 11 [\#55](https://github.com/tj-actions/semver-diff/pull/55) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump tj-actions/remark from 2.3 to 3 [\#54](https://github.com/tj-actions/semver-diff/pull/54) ([dependabot[bot]](https://github.com/apps/dependabot))
+- feat: switch to use a composite action [\#53](https://github.com/tj-actions/semver-diff/pull/53) ([jackton1](https://github.com/jackton1))
+- Update dependency alpine to v3.16.0 [\#52](https://github.com/tj-actions/semver-diff/pull/52) ([renovate[bot]](https://github.com/apps/renovate))
+- Update pascalgn/automerge-action action to v0.15.3 [\#51](https://github.com/tj-actions/semver-diff/pull/51) ([renovate[bot]](https://github.com/apps/renovate))
+- Update cirrus-actions/rebase action to v1.7 [\#50](https://github.com/tj-actions/semver-diff/pull/50) ([renovate[bot]](https://github.com/apps/renovate))
+- Update github/codeql-action action to v2 [\#49](https://github.com/tj-actions/semver-diff/pull/49) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v3.0.2 [\#48](https://github.com/tj-actions/semver-diff/pull/48) ([renovate[bot]](https://github.com/apps/renovate))
+- Update cirrus-actions/rebase action to v1.6 [\#47](https://github.com/tj-actions/semver-diff/pull/47) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v3.0.1 [\#46](https://github.com/tj-actions/semver-diff/pull/46) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency alpine to v3.15.4 [\#45](https://github.com/tj-actions/semver-diff/pull/45) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency alpine to v3.15.3 [\#44](https://github.com/tj-actions/semver-diff/pull/44) ([renovate[bot]](https://github.com/apps/renovate))
+- Update pascalgn/automerge-action action to v0.15.2 [\#43](https://github.com/tj-actions/semver-diff/pull/43) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency alpine to v3.15.2 [\#42](https://github.com/tj-actions/semver-diff/pull/42) ([renovate[bot]](https://github.com/apps/renovate))
+- Update peter-evans/create-pull-request action to v4 [\#41](https://github.com/tj-actions/semver-diff/pull/41) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v1.2.1 [\#40](https://github.com/tj-actions/semver-diff/pull/40) ([jackton1](https://github.com/jackton1))
+
+## [v1.2.1](https://github.com/tj-actions/semver-diff/tree/v1.2.1) (2022-03-23)
+
+[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v1.2.0...v1.2.1)
 
 **Merged pull requests:**
 
