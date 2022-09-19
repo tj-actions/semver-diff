@@ -1,12 +1,26 @@
 # Changelog
 
-## [v2.0.0](https://github.com/tj-actions/semver-diff/tree/v2.0.0) (2022-06-12)
+## [v2.1.0](https://github.com/tj-actions/semver-diff/tree/v2.1.0) (2022-09-19)
 
-[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v1.2.1...v2.0.0)
+[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v2.0.0...v2.1.0)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#3](https://github.com/tj-actions/semver-diff/issues/3)
+
+**Merged pull requests:**
+
+- chore: upgrade semver tool [\#62](https://github.com/tj-actions/semver-diff/pull/62) ([jackton1](https://github.com/jackton1))
+- Update tj-actions/github-changelog-generator action to v1.15 [\#61](https://github.com/tj-actions/semver-diff/pull/61) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/verify-changed-files action to v11 [\#60](https://github.com/tj-actions/semver-diff/pull/60) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/github-changelog-generator action to v1.14 [\#59](https://github.com/tj-actions/semver-diff/pull/59) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/verify-changed-files action to v10 [\#58](https://github.com/tj-actions/semver-diff/pull/58) ([renovate[bot]](https://github.com/apps/renovate))
+- Update codacy/codacy-analysis-cli-action action to v4.1.0 [\#57](https://github.com/tj-actions/semver-diff/pull/57) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v2.0.0 [\#56](https://github.com/tj-actions/semver-diff/pull/56) ([jackton1](https://github.com/jackton1))
+
+## [v2.0.0](https://github.com/tj-actions/semver-diff/tree/v2.0.0) (2022-06-12)
+
+[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v1.2.1...v2.0.0)
 
 **Merged pull requests:**
 
