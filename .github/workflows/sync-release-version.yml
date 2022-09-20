@@ -11,7 +11,9 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Sync release version
+      - name: Run release-tagger
+        uses: tj-actions/release-tagger@v2
+      - name: Sync release version.
         uses: tj-actions/sync-release-version@v13
         id: sync-release-version
         with:
@@ -23,11 +25,11 @@ jobs:
         with:
           output: 'HISTORY.md'
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v4.1.1
         with:
           base: "main"
           title: "Upgraded to ${{ steps.sync-release-version.outputs.new_version }}"
           branch: "upgrade-to-${{ steps.sync-release-version.outputs.new_version }}"
-          commit-message: "Upgraded from ${{ steps.sync-release-version.outputs.old_version }} → ${{ steps.sync-release-version.outputs.new_version }}"
+          commit-message: "Upgraded from ${{ steps.sync-release-version.outputs.old_version }} -> ${{ steps.sync-release-version.outputs.new_version }}"
           body: "View [CHANGES](https://github.com/${{ github.repository }}/compare/${{ steps.sync-release-version.outputs.old_version }}...${{ steps.sync-release-version.outputs.new_version }})"
           token: ${{ secrets.PAT_TOKEN }}
