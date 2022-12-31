@@ -89,12 +89,31 @@ jobs:
 
 ## Inputs
 
+<!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
+
+|        INPUT         |  TYPE  | REQUIRED |         DEFAULT         |                            DESCRIPTION                            |
+|----------------------|--------|----------|-------------------------|-------------------------------------------------------------------|
+| initial\_release\_type | string |   true   |        `"patch"`        | Initial release type returned when there<br>are no existing tags. |
+|        token         | string |   true   | `"${{ github.token }}"` |                 GITHUB\_TOKEN or a Repo scoped PAT                 |
+
+<!-- AUTO-DOC-INPUT:END -->
+
 |   Input       |    type    |  required     |  default                      |  description  |
 |:-------------:|:-----------:|:-------------:|:----------------------------:|:-------------:|
 | token         |  `string`   |    `true`    | `${{ github.token }}` | [GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)              |
 | initial\_release\_type | `string` | `true`    | `patch`  |  Initial release type returned <br /> when there are no existing tags. |
 
 ## Outputs
+
+<!-- AUTO-DOC-OUTPUT:START - Do not remove or modify this section -->
+
+|    OUTPUT    |  TYPE  |                                               DESCRIPTION                                               |
+|--------------|--------|---------------------------------------------------------------------------------------------------------|
+| new\_version  | string |                                       The current project version                                       |
+| old\_version  | string |                                      The previous project version                                       |
+| release\_type | string | The difference between two versions by<br> the release type (major, minor, patch,<br>prerelease, build) |
+
+<!-- AUTO-DOC-OUTPUT:END -->
 
 |   Output       |    type    |  description  |
 |:-------------:|:-----------:|:-------------:|
