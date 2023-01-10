@@ -12,11 +12,7 @@ fi
 git fetch origin +refs/tags/*:refs/tags/*
 
 NEW_TAG=${4:-"${GITHUB_REF/refs\/tags\//}"}
-MAJOR_VERSION=$(echo "$NEW_TAG" | cut -d. -f1)
-
-
-CURRENT_TAG=${3:-$(git tag -l --sort=-version:refname "$MAJOR_VERSION.*" | grep -v "$NEW_TAG" | head -1 || true)}
-
+CURRENT_TAG=${3:-$(git tag -l --sort=-version:refname "*.*" | grep -v "$NEW_TAG" | head -1 || true)}
 
 if [[ -z $CURRENT_TAG ]]; then
   echo "::warning::Initial release detected unable to determine any tag diff."
