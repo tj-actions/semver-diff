@@ -91,10 +91,9 @@ jobs:
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|        INPUT         |  TYPE  | REQUIRED |         DEFAULT         |                            DESCRIPTION                            |
-|----------------------|--------|----------|-------------------------|-------------------------------------------------------------------|
-| initial\_release\_type | string |   true   |        `"patch"`        | Initial release type returned when there<br>are no existing tags. |
-|        token         | string |   true   | `"${{ github.token }}"` |                 GITHUB\_TOKEN or a Repo scoped PAT                 |
+|        INPUT         |  TYPE  | REQUIRED |  DEFAULT  |                            DESCRIPTION                            |
+|----------------------|--------|----------|-----------|-------------------------------------------------------------------|
+| initial\_release\_type | string |   true   | `"patch"` | Initial release type returned when there<br>are no existing tags. |
 
 <!-- AUTO-DOC-INPUT:END -->
 
