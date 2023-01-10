@@ -1,8 +1,17 @@
 # Changelog
 
+## [v2.4.0](https://github.com/tj-actions/semver-diff/tree/v2.4.0) (2023-01-10)
+
+[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v2...v2.4.0)
+
 ## [v2](https://github.com/tj-actions/semver-diff/tree/v2) (2023-01-10)
 
 [Full Changelog](https://github.com/tj-actions/semver-diff/compare/v2.3.0...v2)
+
+**Merged pull requests:**
+
+- feat: fix deprecation warning [\#88](https://github.com/tj-actions/semver-diff/pull/88) ([jackton1](https://github.com/jackton1))
+- Upgraded to v2.3.0 [\#87](https://github.com/tj-actions/semver-diff/pull/87) ([jackton1](https://github.com/jackton1))
 
 ## [v2.3.0](https://github.com/tj-actions/semver-diff/tree/v2.3.0) (2023-01-10)
 
