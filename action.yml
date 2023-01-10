@@ -2,10 +2,6 @@ name: Semver diff
 description: Get the difference between two semantic versions
 author: tj-actions
 inputs:
-  token:
-    description: 'GITHUB_TOKEN or a Repo scoped PAT'
-    required: true
-    default: ${{ github.token }}
   initial_release_type:
     description: 'Initial release type returned when there are no existing tags.'
     required: true
