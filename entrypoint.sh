@@ -9,7 +9,7 @@ fi
 
 git fetch origin +refs/tags/*:refs/tags/*
 
-CURRENT_TAG=${3:-$(git describe --abbrev=0 --tags "$(git rev-list --tags --skip=1  --max-count=1)" || true)}
+CURRENT_TAG=${3:-$(git describe --abbrev=0 --tags "$(git rev-list --tags --skip=1  --max-count=1)" 2>/dev/null || true)}
 NEW_TAG=${4:-"${GITHUB_REF/refs\/tags\//}"}
 
 if [[ -z $CURRENT_TAG ]]; then
