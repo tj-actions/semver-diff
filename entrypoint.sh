@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 
 if [[ $GITHUB_REF != "refs/tags/"* ]]; then
   echo "::warning::Skipping: This should only run on tags push or on release instead of '$GITHUB_EVENT_NAME'.";
@@ -9,8 +9,12 @@ fi
 
 git fetch origin +refs/tags/*:refs/tags/*
 
-CURRENT_TAG=${3:-$(git describe --abbrev=0 --tags "$(git rev-list --tags --skip=1  --max-count=1)" 2>/dev/null || true)}
 NEW_TAG=${4:-"${GITHUB_REF/refs\/tags\//}"}
+MAJOR_VERSION=$(echo "$NEW_TAG" | cut -d. -f1)
+
+
+CURRENT_TAG=${3:-$(git tag -l --sort=-version:refname "$MAJOR_VERSION.*" | grep -v "$NEW_TAG" | head -1 || true)}
+
 
 if [[ -z $CURRENT_TAG ]]; then
   echo "::warning::Initial release detected unable to determine any tag diff."
