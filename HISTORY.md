@@ -1,12 +1,20 @@
 # Changelog
 
-## [v2.2.0](https://github.com/tj-actions/semver-diff/tree/v2.2.0) (2023-01-10)
-
-[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v2...v2.2.0)
-
 ## [v2](https://github.com/tj-actions/semver-diff/tree/v2) (2023-01-10)
 
-[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v2.1.0...v2)
+[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v2.3.0...v2)
+
+## [v2.3.0](https://github.com/tj-actions/semver-diff/tree/v2.3.0) (2023-01-10)
+
+[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v2.2.0...v2.3.0)
+
+**Merged pull requests:**
+
+- Upgraded to v2.2.0 [\#86](https://github.com/tj-actions/semver-diff/pull/86) ([jackton1](https://github.com/jackton1))
+
+## [v2.2.0](https://github.com/tj-actions/semver-diff/tree/v2.2.0) (2023-01-10)
+
+[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v2.1.0...v2.2.0)
 
 **Closed issues:**
 
