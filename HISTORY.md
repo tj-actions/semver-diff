@@ -1,12 +1,46 @@
 # Changelog
 
-## [v2.1.0](https://github.com/tj-actions/semver-diff/tree/v2.1.0) (2022-09-19)
+## [v2.2.0](https://github.com/tj-actions/semver-diff/tree/v2.2.0) (2023-01-10)
 
-[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v2.0.0...v2.1.0)
+[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v2...v2.2.0)
+
+## [v2](https://github.com/tj-actions/semver-diff/tree/v2) (2023-01-10)
+
+[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v2.1.0...v2)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#3](https://github.com/tj-actions/semver-diff/issues/3)
+
+**Merged pull requests:**
+
+- Updated README.md [\#85](https://github.com/tj-actions/semver-diff/pull/85) ([jackton1](https://github.com/jackton1))
+- Update actions/checkout action to v3.3.0 [\#84](https://github.com/tj-actions/semver-diff/pull/84) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/auto-doc action to v1.7.3 [\#83](https://github.com/tj-actions/semver-diff/pull/83) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/auto-doc action to v1.7.2 [\#82](https://github.com/tj-actions/semver-diff/pull/82) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#81](https://github.com/tj-actions/semver-diff/pull/81) ([jackton1](https://github.com/jackton1))
+- Update tj-actions/github-changelog-generator action to v1.17 [\#80](https://github.com/tj-actions/semver-diff/pull/80) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/verify-changed-files action to v13 [\#79](https://github.com/tj-actions/semver-diff/pull/79) ([renovate[bot]](https://github.com/apps/renovate))
+- Update cirrus-actions/rebase action to v1.8 [\#78](https://github.com/tj-actions/semver-diff/pull/78) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v3.2.0 [\#77](https://github.com/tj-actions/semver-diff/pull/77) ([renovate[bot]](https://github.com/apps/renovate))
+- Update peter-evans/create-pull-request action to v4.2.3 [\#76](https://github.com/tj-actions/semver-diff/pull/76) ([renovate[bot]](https://github.com/apps/renovate))
+- Update peter-evans/create-pull-request action to v4.2.2 [\#75](https://github.com/tj-actions/semver-diff/pull/75) ([renovate[bot]](https://github.com/apps/renovate))
+- Update peter-evans/create-pull-request action to v4.2.1 [\#74](https://github.com/tj-actions/semver-diff/pull/74) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump hmarr/auto-approve-action from 2 to 3 [\#73](https://github.com/tj-actions/semver-diff/pull/73) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update peter-evans/create-pull-request action to v4.2.0 [\#72](https://github.com/tj-actions/semver-diff/pull/72) ([renovate[bot]](https://github.com/apps/renovate))
+- Update pascalgn/automerge-action action to v0.15.5 [\#71](https://github.com/tj-actions/semver-diff/pull/71) ([renovate[bot]](https://github.com/apps/renovate))
+- Update peter-evans/create-pull-request action to v4.1.4 [\#70](https://github.com/tj-actions/semver-diff/pull/70) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/verify-changed-files action to v12 [\#69](https://github.com/tj-actions/semver-diff/pull/69) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v3.1.0 [\#68](https://github.com/tj-actions/semver-diff/pull/68) ([renovate[bot]](https://github.com/apps/renovate))
+- Update peter-evans/create-pull-request action to v4.1.3 [\#67](https://github.com/tj-actions/semver-diff/pull/67) ([renovate[bot]](https://github.com/apps/renovate))
+- Update peter-evans/create-pull-request action to v4.1.2 [\#66](https://github.com/tj-actions/semver-diff/pull/66) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump codacy/codacy-analysis-cli-action from 4.1.0 to 4.2.0 [\#65](https://github.com/tj-actions/semver-diff/pull/65) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update tj-actions/sync-release-version action to v13 [\#64](https://github.com/tj-actions/semver-diff/pull/64) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v2.1.0 [\#63](https://github.com/tj-actions/semver-diff/pull/63) ([jackton1](https://github.com/jackton1))
+
+## [v2.1.0](https://github.com/tj-actions/semver-diff/tree/v2.1.0) (2022-09-19)
+
+[Full Changelog](https://github.com/tj-actions/semver-diff/compare/v2.0.0...v2.1.0)
 
 **Merged pull requests:**
 
