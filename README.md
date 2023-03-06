@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     name: semver-diff
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Run semver-diff
         id: semver-diff
         uses: tj-actions/semver-diff@v2
@@ -51,7 +51,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
