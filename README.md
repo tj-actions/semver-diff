@@ -101,11 +101,11 @@ jobs:
 
 <!-- AUTO-DOC-OUTPUT:START - Do not remove or modify this section -->
 
-|    OUTPUT    |  TYPE  |                                               DESCRIPTION                                               |
-|--------------|--------|---------------------------------------------------------------------------------------------------------|
-| new\_version  | string |                                       The current project version                                       |
-| old\_version  | string |                                      The previous project version                                       |
-| release\_type | string | The difference between two versions by<br> the release type (major, minor, patch,<br>prerelease, build) |
+|    OUTPUT    |  TYPE  |                                                    DESCRIPTION                                                    |
+|--------------|--------|-------------------------------------------------------------------------------------------------------------------|
+| new\_version  | string |                                            The current project version                                            |
+| old\_version  | string |                                           The previous project version                                            |
+| release\_type | string | The difference between two versions by<br> the release type (`major`, `minor`, `patch`,<br>`prerelease`, `build`) |
 
 <!-- AUTO-DOC-OUTPUT:END -->
 
