@@ -93,7 +93,7 @@ jobs:
 
 |        INPUT         |  TYPE  | REQUIRED |  DEFAULT  |                            DESCRIPTION                            |
 |----------------------|--------|----------|-----------|-------------------------------------------------------------------|
-| initial\_release\_type | string |   true   | `"patch"` | Initial release type returned when there<br>are no existing tags. |
+| initial\_release\_type | string |   true   | `"patch"` | Initial release type returned when<br>there are no existing tags. |
 
 <!-- AUTO-DOC-INPUT:END -->
 
@@ -105,7 +105,7 @@ jobs:
 |--------------|--------|-------------------------------------------------------------------------------------------------------------------|
 | new\_version  | string |                                            The current project version                                            |
 | old\_version  | string |                                           The previous project version                                            |
-| release\_type | string | The difference between two versions by<br> the release type (`major`, `minor`, `patch`,<br>`prerelease`, `build`) |
+| release\_type | string | The difference between two versions<br> by the release type (`major`,<br>`minor`, `patch`, `prerelease`, `build`) |
 
 <!-- AUTO-DOC-OUTPUT:END -->
 
