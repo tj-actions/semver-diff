@@ -91,9 +91,9 @@ jobs:
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|        INPUT         |  TYPE  | REQUIRED |  DEFAULT  |                             DESCRIPTION                             |
-|----------------------|--------|----------|-----------|---------------------------------------------------------------------|
-| initial\_release\_type | string |   true   | `"patch"` | Initial release type returned when <br>there are no existing tags.  |
+|                                            INPUT                                             |  TYPE  | REQUIRED |  DEFAULT  |                             DESCRIPTION                             |
+|----------------------------------------------------------------------------------------------|--------|----------|-----------|---------------------------------------------------------------------|
+| <a name="input_initial_release_type"></a>[initial\_release\_type](#input_initial_release_type) | string |   true   | `"patch"` | Initial release type returned when <br>there are no existing tags.  |
 
 <!-- AUTO-DOC-INPUT:END -->
 
@@ -101,11 +101,11 @@ jobs:
 
 <!-- AUTO-DOC-OUTPUT:START - Do not remove or modify this section -->
 
-|    OUTPUT    |  TYPE  |                                                   DESCRIPTION                                                   |
-|--------------|--------|-----------------------------------------------------------------------------------------------------------------|
-| new\_version  | string |                                           The current project version                                           |
-| old\_version  | string |                                          The previous project version                                           |
-| release\_type | string | The difference between two versions <br>by the release type (`major`, `minor`, `patch`, `prerelease`, `build`)  |
+|                                 OUTPUT                                 |  TYPE  |                                                   DESCRIPTION                                                   |
+|------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------------------|
+|  <a name="output_new_version"></a>[new\_version](#output_new_version)   | string |                                           The current project version                                           |
+|  <a name="output_old_version"></a>[old\_version](#output_old_version)   | string |                                          The previous project version                                           |
+| <a name="output_release_type"></a>[release\_type](#output_release_type) | string | The difference between two versions <br>by the release type (`major`, `minor`, `patch`, `prerelease`, `build`)  |
 
 <!-- AUTO-DOC-OUTPUT:END -->
 
