@@ -17,26 +17,15 @@ CURRENT_TAG=${3:-$(git tag -l --sort=-version:refname "*.*" | grep -v "$NEW_TAG"
 if [[ -z $CURRENT_TAG ]]; then
   echo "::warning::Initial release detected unable to determine any tag diff."
   echo "::warning::Setting release_type to $INPUT_INITIAL_RELEASE_TYPE."
-  
-  if [[ -z "$GITHUB_OUTPUT" ]]; then
-    echo "::set-output name=release_type::$INPUT_INITIAL_RELEASE_TYPE"
-  else
-    echo "release_type=$INPUT_INITIAL_RELEASE_TYPE" >> "$GITHUB_OUTPUT"
-  fi
+  echo "release_type=$INPUT_INITIAL_RELEASE_TYPE" >> "$GITHUB_OUTPUT"
   exit 0;
 fi
 
 echo "::debug::Calculating diff..."
 PART=$(wget -O - https://raw.githubusercontent.com/fsaintjacques/semver-tool/3.3.0/src/semver | bash -s diff "${CURRENT_TAG//v/}" "${NEW_TAG//v/}")
 
-if [[ -z "$GITHUB_OUTPUT" ]]; then
-  echo "::set-output name=release_type::$PART"
-  echo "::set-output name=old_version::$CURRENT_TAG"
-  echo "::set-output name=new_version::$NEW_TAG"
-else
-  cat <<EOF >> "$GITHUB_OUTPUT"
+cat <<EOF >> "$GITHUB_OUTPUT"
 release_type=$PART
 old_version=$CURRENT_TAG
 new_version=$NEW_TAG
 EOF
-fi
