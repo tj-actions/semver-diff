@@ -22,7 +22,7 @@ if [[ -z $CURRENT_TAG ]]; then
 fi
 
 echo "::debug::Calculating diff..."
-PART=$(wget -O - https://raw.githubusercontent.com/fsaintjacques/semver-tool/3.3.0/src/semver | bash -s diff "${CURRENT_TAG//v/}" "${NEW_TAG//v/}")
+PART=$(wget -O - https://raw.githubusercontent.com/fsaintjacques/semver-tool/3.4.0/src/semver | bash -s diff "${CURRENT_TAG//v/}" "${NEW_TAG//v/}")
 
 cat <<EOF >> "$GITHUB_OUTPUT"
 release_type=$PART
