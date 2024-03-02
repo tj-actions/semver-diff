@@ -17,7 +17,11 @@ CURRENT_TAG=${3:-$(git tag -l --sort=-version:refname "*.*" | grep -v "$NEW_TAG"
 if [[ -z $CURRENT_TAG ]]; then
   echo "::warning::Initial release detected unable to determine any tag diff."
   echo "::warning::Setting release_type to $INPUT_INITIAL_RELEASE_TYPE."
-  echo "release_type=$INPUT_INITIAL_RELEASE_TYPE" >> "$GITHUB_OUTPUT"
+  cat <<EOF >> "$GITHUB_OUTPUT"
+release_type=$INPUT_INITIAL_RELEASE_TYPE
+old_version=$NEW_TAG
+new_version=$NEW_TAG
+EOF
   exit 0;
 fi
 
