@@ -1,5 +1,21 @@
 # Changelog
 
+# [3.0.1](https://github.com/tj-actions/semver-diff/compare/v3.0.0...v3.0.1) - (2024-03-02)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- Bug with empty output for initial releases ([c0bdd29](https://github.com/tj-actions/semver-diff/commit/c0bdd29108b3c4d3f60c8ce18deb3204babd5849))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#159](https://github.com/tj-actions/semver-diff/pull/159): bug with empty output for initial releases ([398e876](https://github.com/tj-actions/semver-diff/commit/398e8769d47e9c468f790c74be573426e3cae6dd))  - (repo-ranger[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded to v3 ([#157](https://github.com/tj-actions/semver-diff/issues/157))
+
+Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([f6d4f03](https://github.com/tj-actions/semver-diff/commit/f6d4f03824977caa48250ff9df2c8fe2219a8117))  - (tj-actions[bot])
+
 # [3.0.0](https://github.com/tj-actions/semver-diff/compare/v2.4.1...v3.0.0) - (2024-03-01)
 
 ## <!-- 13 -->📦 Bumps
